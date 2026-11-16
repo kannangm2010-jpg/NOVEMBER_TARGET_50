@@ -18,7 +18,6 @@ Sample Output:45°
 """
 
 import math
-
 ab=int(input())
 bc=int(input())
 angle_rad = math.atan(ab / bc)
