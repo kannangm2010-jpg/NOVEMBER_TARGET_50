@@ -26,11 +26,10 @@ In the first sample Volodya's sequence will look like this: {1, 3, 5, 7, 9, 2, 4
 
 """
 n,k=map(int,input().split())
-m=l=[]
-
-for i in range(n+1):
-    if i%2==0:
-        l.append(i)
-    else:
-        m.append(i)
-print(m+l.index(k))
+odds_count = (n + 1) // 2
+if k <= odds_count:
+    print((2*k)-1)
+else:
+    j=k-odds_count
+    print(2*j)
+    
