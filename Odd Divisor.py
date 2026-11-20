@@ -54,10 +54,11 @@ YES
 YES
 NO
 """
-n=int(input())
-for i in range(n):
-    k=int(input())
-    if k%2==0 and k%3!=0:
+
+t=int(input())
+for i in range(t):
+    k = int(input())
+    if bin(k).count("1")==1:
         print("NO")
-    else:
+    else :
         print("YES")
